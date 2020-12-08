@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+#
+# Training to @ Eduazim
+# A game sample
+# 
+#
+# Released under the MIT License
+
+VERSION = "0.1"
+
 import sys
 import pygame
 
@@ -12,13 +22,13 @@ class AlienInvasion:
         self.settings = Settings()
 
         # Set Resolution
-        #self.screen = pygame.display.set_mode(
-         #   (self.settings.screen_width, self.settings.screen_height))
+        self.screen = pygame.display.set_mode(
+            (self.settings.screen_width, self.settings.screen_height))
         
         #Set FullScreen Resolution
-        self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-        self.settings.screen_width = self.screen.get_rect().width
-        self.settings.screen_height = self.screen.get_rect().height
+        #self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+        #self.settings.screen_width = self.screen.get_rect().width
+        #self.settings.screen_height = self.screen.get_rect().height
 
         pygame.display.set_caption("Alien Invasion")
 
